@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+/* navbar div styling */
+.navbar{
+    display: flex;
+    flex-wrap: nowrap;
+    background: #35424a;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 30px;
+}
+
+/* list (ul) */
+.list{
+    display: inline-flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 40px;
+}
+
+/* styling a tag inside navbar */
+.list-items a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* logo image in navbar (branding) */
+img[alt="logo"]{
+    width: 50px;
+    border-radius: 100px;
+    background: #fff;
+}
+
+/* -----------header container----------- */
+.header-container{
+    min-height: 300px;
+    width: 100%;
+    background: url('/images/header-bg-img.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+/* styling header-container */
+.header-container .text{
+    background: #16141491;
+    color: #fff;
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    padding-top: 150px;
+}
+
+/* header-container heading (class="text") */
+.text h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+/* header-container - p tag (sub heading) */
+.text p{
+    font-size: 20px;
+    padding: 0 200px;
+}
+
+/* styling newsletter section */
+.newsletter{
+    background: #35424a;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    min-height: 100px;
+}
+
+/* newsletter heading */
+.newsletter-heading{
+    font-size: 18px;
+    color: #fff;
+}
+
+/* styling form in newsletter */
+.newsletter form{
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* newsletter input text box */
+.newsletter form input{
+    outline: 0;
+    border: 0;
+    padding: 10px 30px;
+    min-width: 20vw;
+    font-size: 15px;
+}
+
+/* newsletter subscribe button */
+.newsletter form button{
+    border: 0;
+    outline: 0;
+    background: #ff1717;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+/* newsletter subscribe btn hover effect */
+.newsletter form button:hover{
+    background: #f40a0a;
+}
+
+
+/* ---------------main-------------- */
+
+/* container */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+/* services-container-heading */
+.services-container-heading{
+    width: 100%;
+    text-align: center;
+}
+
+.services-container-heading h1{
+    font-size: 35px;
+    color: #2e2e3b;
+}
+
+/* services */
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+/* styling service card */
+.card{
+    max-width: 300px;
+    min-height: 350px;
+    border: 1px solid #101010;
+    text-align: center;
+    padding: 50px 20px 20px 20px;
+    transition: 0.4s all;
+}
+
+/* applying hover effect to the services card */
+.card:hover{
+    box-shadow: 5px 5px 0 rgb(45, 45, 45), -3px -3px 40px 2px rgba(194, 194, 194, 0.218);
+}
+
+/* adjusting card image width */
+img[alt="card-img"]{
+    width: 120px;
+}
+
+/* card  - service name */
+.card h2{
+    padding: 20px 0 10px 0;
+}
+
+/* card - service details (p tag) */
+.card p{
+    padding: 5px 10px;
+}
+
+/* card - view button styling */
+.card button{
+    padding: 8px 20px;
+    border: none;
+    border-radius: 3px;
+    background: #a79f9f;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+.card button:hover{
+    background: #918989;
+    border-radius: 30px;
+    box-shadow: 0px 0px 8px 1px rgb(217, 217, 217);
+}
+
+
+/* -----------------------contact-us-btn-div--------------------- */
+.contact-us-btn-div{
+    background: #8054B3;
+    min-height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact-us-btn-div .text-div h2{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.contact-us-btn-div .text-div h3{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.btn-div{
+    background: #28c7fa;
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+}
+
+.btn-div:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 30px -5px rgba(0, 0, 0, 0.33);
+}
+
+.btn-div button{
+    outline: 0;
+    border: 0;
+    background: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* --------------------------gallery image -------------------- */
+.gallery-img-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 70px 0 130px 0;
+    background: #efefef;
+}
+
+.gallery-img--container-heading{
+    min-width: 100%;
+    text-align: center;
+    font-size: 22px;
+    color: #2e2e3b;
+    padding-bottom: 30px;
+}
+
+img[alt="gallery-card-image"]{
+    width: 100%;
+}
+
+.gallery-image {
+    position: relative;
+    width: 400px;
+}
+  
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.2s ease;
+    background-color: #d82323c1;
+}
+
+.gallery-image:hover .overlay {
+    opacity: 1;
+    font-weight: 700;
+}
+  
+.overlay-text {
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+/* ---------------------------footer styling-------------------------- */
+
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #35424a;
+    color: #ffffff;
+}
+
+.footer-container a:hover{
+    color: #ebebeb;
+    text-decoration: underline;
+}
+
+.ftr-branding{
+    width: 300px;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+img[alt="ftr-branding"]{
+    width: 100px;
+    background: #ffffff;
+    border-radius: 100px;
+    margin-bottom: 20px;
+}
+
+.ftr-branding h2{
+    font-size: 20px;
+}
+
+.nav-links ul li, .social-links ul li{
+    list-style-type: none;
+    list-style: none;
+    line-height: 1.4;
+}
+
+.nav-links a, .social-links a{
+    color: #9f9f9f;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.footer-credit{
+    background: #2e2e3b;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+}
+
+.nav-links h2, .social-links h2, .contact h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #b8b8b8;
+    margin-bottom: 10px;
+}
+
+.nav-links a, .social-links a, .contact .email, .call, .location p{
+    font-size: 14px;
+}
+
+address{
+    color: #b8b8b8;
+}
+
+.contact .email, .call, .location{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+}
+
+img[alt="address-logo"]{
+    width: 16px;
+    background: #fff;
+    border-radius: 100px;
+    padding: 2px;
+    margin: 5px;
+}
+
+@media only screen and (max-width: 800px){
+
+    /* navbar */
+    .navbar{
+        padding: 5px 10px;
+    }
+
+    .list{
+        gap: 10px;
+        padding-right: 10px;
+    }
+    
+    /* styling a tag inside navbar */
+    .list-items a {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    /* logo image in navbar (branding) */
+    img[alt="logo"]{
+        width: 30px;
+    }
+
+    /* header-container heading (class="text") */
+    .text h1{
+        font-size: 47px;
+        margin-bottom: 20px;
+    }
+
+    /* header-container - p tag (sub heading) */
+    .text p{
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .newsletter{
+        flex-wrap: wrap;
+        padding: 8px 0;
+    }
+
+    .newsletter-heading{
+        font-size: 14px;
+    }
+
+    .newsletter form input{
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    .newsletter form button{
+        padding: 15px 15px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .container{
+        padding: 50px 20px;
+    }
+
+    /* responsive card design for mobile users */
+    .card{
+        width: 100%;
+        min-height: 350px;
+        border: 1px solid #101010;
+        text-align: center;
+        padding: 50px 20px 20px 20px;
+        transition: 0.4s all;
+    }
+
+
+    /* ------------gallery heading---------- */
+    .gallery-img--container-heading{
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+
+
+
+    /* home page contact us btn div (with violet background color)*/
+    .contact-us-btn-div{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 30px;
+        padding: 10px 0 10px 0;
+    }
+
+    /* styling - (Ready to grow your business?) */
+    .contact-us-btn-div .text-div h2{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    /* styling - (get in touch with us now) */
+    .contact-us-btn-div .text-div h3{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    /* btn div (with contact us text) */
+    .btn-div{
+        width: 15rem;
+    }
+
+
+    /* mobile responsive --------FOOTER-------- code */
+    .footer-container{
+        justify-content: space-around;
+        padding-bottom: 20px;
+    }
+    
+    /* footer logo image styling */
+    img[alt="ftr-branding"]{
+        width: 75px;
+        margin-bottom: 10px;
+    }
+    
+    /* footer credit section */
+    .footer-credit{
+        font-size: 14px;
+    }
+    
+    /* styling footer nav links, social media links and contact */
+    .nav-links h2, .social-links h2, .contact h2{
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    
+    /* styling contact option logo */
+    img[alt="address-logo"]{
+        width: 14px;
+        margin: 4px;
+    }
+}
